@@ -1,6 +1,6 @@
 from django.urls import path
-from Elshod.views import salom
+from Elshod.views import ElshodAPI
 
 urlpatterns = [
-    path('', salom)
+    path('', ElshodAPI.as_view())
 ]
